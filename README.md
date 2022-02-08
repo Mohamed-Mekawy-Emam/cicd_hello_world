@@ -6,9 +6,9 @@
 # Local-Build
 #### To build a docker image from the application
 
-- docker build -t mmekawy/hello:lts . 
+- docker build -t mmekawyhello:1.0 . 
 
-- docker run -d -p 80:80 mmekawy/hello:lts
+- docker run -d -p 80:80 --name hello mmekawyhello:1.0
 
 The dot "." at the end of the command denotes location of the Dockerfile.
 
