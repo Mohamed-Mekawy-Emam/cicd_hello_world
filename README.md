@@ -17,12 +17,15 @@ Access you nodejs application UI from browser
 # Cloud-AWS-Build
 
 Step 1: Provision Jenkins-Master
+
 Jenkins-master
 
 Step 2: Provision Jenkins-slave (Agent)
+
 dev_server
 
 Step 3: Configure Jenkins-Master to build through Jenkins-Slave
+
 1. Manage jenkins > Manage Nodes and Clouds > New Node
 Name = agent 
 Description = agent
@@ -37,8 +40,10 @@ Credentials = <Add ubuntu(agent)>
 Waite until agent provisioned and active on AWS then you can see message "Agent successfully connected and online"
 
 Step 4: Build pipeline from Jenkins-Master UI on Jenkins-Slave
+
 pipeline "CICD_Hello_World" will be triggered automatically after pushing changes on repo and build and run container on Jenkins-slave
 
 Step 5: access the application from browser
+
     http://Jenkins_agent_public_ip:80
 
