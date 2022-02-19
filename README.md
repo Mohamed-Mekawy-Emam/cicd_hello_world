@@ -16,17 +16,32 @@ Access you nodejs application UI from browser
 
     http://localhost:80
 
+# Pre-requisites:
+
+1. Jenkins master and Jenkins Slave is up and running
+2. Docker installed on Jenkins Master and Slave instance.
+3. Git installed on Jenkins Master and Slave instances.
+3. Docker and Docker pipelines plug-in are installed on Jenkins Master.
+4. Repo created in ECR in us-east-2 region.
+5. Make sure port 80 is opened up in security group rules on Jenkins Master and slave. 
+6. Create an IAM role with AmazonEC2ContainerRegistryFullAccess policy, attach to Jenkins Master and Slave EC2 instance
+7. Make sure AWS cli is installed in Jenkins instance.
+
 # Cloud-AWS-Build
 
 Step 1: Provision Jenkins-Master
 
 Jenkins-master
 
+https://github.com/Mohamed-Mekawy-Emam/DevOps-Demos-Jenkins/tree/master/setup-jenkins
+
 Step 2: Provision Jenkins-slave (Agent)
 
-dev_server
+dev_server (Jenkins-Slave in our case)
 
 Step 3: Configure Jenkins-Master to build through Jenkins-Slave
+
+https://github.com/Mohamed-Mekawy-Emam/DevOps-Demos-Jenkins/tree/master/setup-jenkins-slave
 
 1. Manage jenkins > Manage Nodes and Clouds > New Node
 
