@@ -21,11 +21,11 @@ Access you nodejs application UI from browser
 1. Jenkins master and Jenkins Slave is up and running
 2. Docker installed on Jenkins Master and Slave instance.
 3. Git installed on Jenkins Master and Slave instances.
-3. Docker and Docker pipelines plug-in are installed on Jenkins Master.
-4. Repo created in ECR in us-east-2 region.
-5. Make sure port 80 is opened up in security group rules on Jenkins Master and slave. 
-6. Create an IAM role with AmazonEC2ContainerRegistryFullAccess policy, attach to Jenkins Master and Slave EC2 instance
-7. Make sure AWS cli is installed in Jenkins instance.
+4. Docker and Docker pipelines plug-in are installed on Jenkins Master.
+5. Repo created in ECR in us-east-2 region.
+6. Make sure port 80 is opened up in security group rules on Jenkins Master and slave. 
+7. Create an IAM role with AmazonEC2ContainerRegistryFullAccess policy, attach to Jenkins Master and Slave EC2 instance
+8. Make sure AWS cli is installed in Jenkins instance.
 
 # Cloud-AWS-Build
 
